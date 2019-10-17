@@ -122,5 +122,8 @@
   <ItemGroup>
     <None Include="Resources\gun-trigger-click-01.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp1943873.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

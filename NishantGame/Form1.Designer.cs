@@ -94,9 +94,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::NishantGame.Resource1.background;
             this.pictureBox1.Location = new System.Drawing.Point(12, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(776, 328);
+            this.pictureBox1.Size = new System.Drawing.Size(776, 463);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
