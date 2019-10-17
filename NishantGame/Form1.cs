@@ -19,18 +19,18 @@ namespace NishantGame
             InitializeComponent();
         }
 
-        private void Load_Click(object sender, EventArgs e)
-        {     //This method  is using for loading the bullets
+        private void LoadBtn_Click(object sender, EventArgs e)
+        {   
+            //This method  is using for loading the bullets
             pictureBox1.Image = NishantGame.Resource1.load;
             SoundPlayer sc = new SoundPlayer(NishantGame.Resource1.loadG);
             sc.Play();
             Spin.Enabled = true;
 
-
             //run the function from the object of the class Shooting to run the logic of shooting
             Nishantobj.LoadingFunc();
-
         }
+        
 
         private void Spin_Click(object sender, EventArgs e)
         {  // Spin the revolver
@@ -65,5 +65,7 @@ namespace NishantGame
         {
             Application.Restart();
         }
+
+        
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Load = new System.Windows.Forms.Button();
+            this.LoadBtn = new System.Windows.Forms.Button();
             this.Spin = new System.Windows.Forms.Button();
             this.ShootAt = new System.Windows.Forms.Button();
             this.ShootHd = new System.Windows.Forms.Button();
@@ -37,16 +37,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Load
+            // LoadBtn
             // 
-            this.Load.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Load.Location = new System.Drawing.Point(28, 404);
-            this.Load.Name = "Load";
-            this.Load.Size = new System.Drawing.Size(75, 23);
-            this.Load.TabIndex = 0;
-            this.Load.Text = "Load";
-            this.Load.UseVisualStyleBackColor = true;
-            this.Load.Click += new System.EventHandler(this.Load_Click);
+            this.LoadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadBtn.Location = new System.Drawing.Point(28, 404);
+            this.LoadBtn.Name = "LoadBtn";
+            this.LoadBtn.Size = new System.Drawing.Size(75, 23);
+            this.LoadBtn.TabIndex = 0;
+            this.LoadBtn.Text = "Load";
+            this.LoadBtn.UseVisualStyleBackColor = true;
+            this.LoadBtn.Click += new System.EventHandler(this.LoadBtn_Click);
             // 
             // Spin
             // 
@@ -114,7 +114,7 @@
             this.Controls.Add(this.ShootHd);
             this.Controls.Add(this.ShootAt);
             this.Controls.Add(this.Spin);
-            this.Controls.Add(this.Load);
+            this.Controls.Add(this.LoadBtn);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -125,7 +125,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Load;
+        private System.Windows.Forms.Button LoadBtn;
         private System.Windows.Forms.Button Spin;
         private System.Windows.Forms.Button ShootAt;
         private System.Windows.Forms.Button ShootHd;
