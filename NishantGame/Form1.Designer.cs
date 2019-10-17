@@ -40,7 +40,7 @@
             // Load
             // 
             this.Load.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Load.Location = new System.Drawing.Point(37, 256);
+            this.Load.Location = new System.Drawing.Point(28, 404);
             this.Load.Name = "Load";
             this.Load.Size = new System.Drawing.Size(75, 23);
             this.Load.TabIndex = 0;
@@ -50,8 +50,9 @@
             // 
             // Spin
             // 
+            this.Spin.Enabled = false;
             this.Spin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Spin.Location = new System.Drawing.Point(165, 256);
+            this.Spin.Location = new System.Drawing.Point(158, 404);
             this.Spin.Name = "Spin";
             this.Spin.Size = new System.Drawing.Size(75, 23);
             this.Spin.TabIndex = 1;
@@ -61,8 +62,9 @@
             // 
             // ShootAt
             // 
+            this.ShootAt.Enabled = false;
             this.ShootAt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShootAt.Location = new System.Drawing.Point(306, 256);
+            this.ShootAt.Location = new System.Drawing.Point(300, 404);
             this.ShootAt.Name = "ShootAt";
             this.ShootAt.Size = new System.Drawing.Size(75, 23);
             this.ShootAt.TabIndex = 2;
@@ -72,8 +74,9 @@
             // 
             // ShootHd
             // 
+            this.ShootHd.Enabled = false;
             this.ShootHd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShootHd.Location = new System.Drawing.Point(424, 256);
+            this.ShootHd.Location = new System.Drawing.Point(453, 404);
             this.ShootHd.Name = "ShootHd";
             this.ShootHd.Size = new System.Drawing.Size(75, 23);
             this.ShootHd.TabIndex = 3;
@@ -84,7 +87,7 @@
             // PLyAgn
             // 
             this.PLyAgn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PLyAgn.Location = new System.Drawing.Point(596, 256);
+            this.PLyAgn.Location = new System.Drawing.Point(610, 404);
             this.PLyAgn.Name = "PLyAgn";
             this.PLyAgn.Size = new System.Drawing.Size(75, 23);
             this.PLyAgn.TabIndex = 4;

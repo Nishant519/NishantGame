@@ -20,7 +20,7 @@ namespace NishantGame
         }
 
         private void Load_Click(object sender, EventArgs e)
-        {
+        {     //This method  is using for loading the bullets
             pictureBox1.Image = NishantGame.Resource1.load;
             SoundPlayer sc = new SoundPlayer(NishantGame.Resource1.loadG);
             sc.Play();
@@ -33,12 +33,12 @@ namespace NishantGame
         }
 
         private void Spin_Click(object sender, EventArgs e)
-        {
+        {  // Spin the revolver
             Spin.Enabled = true;
             pictureBox1.Image = NishantGame.Resource1.spin;
             SoundPlayer sc = new SoundPlayer(NishantGame.Resource1.Trriger);
             sc.Play();
-            Nishantobj.SpinFunc();
+            Nishantobj.SpinFunc();//Calling the spin function to act
             ShootAt.Enabled = true;
             ShootHd.Enabled = true;
         }
@@ -49,7 +49,7 @@ namespace NishantGame
             pictureBox1.Image = NishantGame.Resource1.try_again;
             SoundPlayer sc = new SoundPlayer(NishantGame.Resource1.Reload);
             sc.Play();
-            int chances = Nishantobj.ShootingAwayFunc();
+            int chances = Nishantobj.ShootingAwayFunc();//calling the shootingAwayFunc
         }
 
         private void ShootHd_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace NishantGame
             pictureBox1.Image = NishantGame.Resource1.shot;
             SoundPlayer sc = new SoundPlayer(NishantGame.Resource1.ShotGu);
             sc.Play();
-            int chancesAway = Nishantobj.ShootingAwayFunc2();
+            int chancesAway = Nishantobj.ShootingAwayFunc2();//calling the ShootingAwayFunc2 
         }
 
         private void PLyAgn_Click(object sender, EventArgs e)

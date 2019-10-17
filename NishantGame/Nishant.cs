@@ -16,7 +16,7 @@ namespace NishantGame
             Bullet = 6;
         }
 
-        public int SpinFunc()
+        public int SpinFunc() //spin the chamber
         {
             Random rand = new Random();
             Bullet = rand.Next(1, 7); //setting a range
