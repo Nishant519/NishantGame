@@ -11,6 +11,10 @@ namespace NishantGame
    public class Nishant
    {  
         int Bullet;
+        int Points = 0;
+        int chances = 4;
+        int chancesAway = 2;
+
         public void LoadingFunc() //loading the gun
         {
             Bullet = 6;
@@ -24,13 +28,12 @@ namespace NishantGame
             //chamber to go to a new place from 1 to 6 (which should be 7)
 
         }
-        int chances = 4;
-        public int ShootingAwayFunc()
+        public int ShootingAtHead()
         {            //if user will get 1 chance come message user is dead!
             if (Bullet == 1)
             {
                 
-                MessageBox.Show("You are dead, do you want to try Again");
+                MessageBox.Show("You are dead and you have " + Points + " points, do you want to try Again");
                 Application.Restart();
             }
 
@@ -40,11 +43,19 @@ namespace NishantGame
                 chances--;
                 Bullet--;
                 //if chances of shooting at your head is zero,
-                if (chances == 0)
+                if (chances == 0 && chancesAway ==2)
                 {
-                    MessageBox.Show("You win!!! Congrats! Do you want to try again?");
+                    Points = 50;
+                    MessageBox.Show("You win!!! Congrats!" + Points+ " Do you want to try again?");
                     Application.Restart();
                 }
+                else if (chances == 0 && chancesAway == 1)
+                {
+                    Points = 20;
+                    MessageBox.Show("You win!!! Congrats!" + Points+ " Do you want to try again ? ");
+                    Application.Restart();
+                }
+
                 else
                 {
                     MessageBox.Show("Try your luck.. ");
@@ -54,15 +65,21 @@ namespace NishantGame
         }
 
 
-        int chancesAway = 2;
 
 
-        public int ShootingAwayFunc2()
+        public int ShootingAwayFunc()
         {
-            if (Bullet == 1)
+            if (Bullet == 1 && chancesAway == 2)
             {
-                //tell the user you died!
-                MessageBox.Show("You Safe");
+                //tell the user you win!
+                Points = 100;
+                MessageBox.Show("You win and you got " + Points + " points");
+            }
+            else if(Bullet == 1 && chancesAway == 1)
+            {
+                //tell the user you win but with lesser points
+                Points = 50;
+                MessageBox.Show("You win and you got " + Points + " points");
             }
             else
             {

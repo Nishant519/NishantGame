@@ -28,7 +28,7 @@ namespace NishantTest
             {
               
 
-                int testResultShootingAwayFunc = test.ShootingAwayFunc();
+                int testResultShootingAwayFunc = test.ShootingAtHead();
 
                 Assert.IsTrue(testResultShootingAwayFunc <= 4 && testResultShootingAwayFunc > 0);
             }
@@ -36,7 +36,7 @@ namespace NishantTest
             [TestMethod]
             public void TestMethod3()
             {
-                int testresultShootingAwayFunc2 = test.ShootingAwayFunc2();
+                int testresultShootingAwayFunc2 = test.ShootingAwayFunc();
 
                 Assert.IsTrue(testresultShootingAwayFunc2 < 7 && testresultShootingAwayFunc2 > 0);
 

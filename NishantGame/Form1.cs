@@ -49,7 +49,7 @@ namespace NishantGame
             pictureBox1.Image = NishantGame.Resource1.try_again;
             SoundPlayer sc = new SoundPlayer(NishantGame.Resource1.Reload);
             sc.Play();
-            int chances = Nishantobj.ShootingAwayFunc();//calling the shootingAwayFunc
+            int chances = Nishantobj.ShootingAtHead();//calling the shootingAwayFunc
         }
 
         private void ShootHd_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace NishantGame
             pictureBox1.Image = NishantGame.Resource1.shot;
             SoundPlayer sc = new SoundPlayer(NishantGame.Resource1.ShotGu);
             sc.Play();
-            int chancesAway = Nishantobj.ShootingAwayFunc2();//calling the ShootingAwayFunc2 
+            int chancesAway = Nishantobj.ShootingAwayFunc();//calling the ShootingAwayFunc2 
         }
 
         private void PLyAgn_Click(object sender, EventArgs e)
